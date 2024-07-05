@@ -1,0 +1,850 @@
+Microsoft Windows [Version 10.0.22000.2538]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Mon>git -v
+git version 2.45.2.windows.1
+
+C:\Users\Mon>cd ..
+
+C:\Users>cd ..
+
+C:\>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\>cd d
+The system cannot find the path specified.
+
+C:\>cd ..
+
+C:\>cd /d D:
+
+D:\>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is E009-EB0F
+
+ Directory of D:\
+
+29/11/2023  02:49 pm    <DIR>          BUILTON
+05/07/2024  09:44 am    <DIR>          GLOBALHOME
+05/07/2024  09:49 am    <DIR>          MON
+24/11/2023  10:02 am    <DIR>          MON - Docs
+05/07/2024  09:55 am    <DIR>          MON 2017
+03/06/2024  05:35 pm    <DIR>          PSAutoRecover
+03/06/2024  05:01 pm    <DIR>          PSAutoRecover.BackupByPhotoshopPortable
+01/03/2022  09:12 am    <DIR>          System Files
+09/10/2023  05:37 pm    <DIR>          ThunderBird
+17/04/2024  11:00 am    <DIR>          UNA
+               0 File(s)              0 bytes
+              10 Dir(s)  172,748,861,440 bytes free
+
+D:\>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is E009-EB0F
+
+ Directory of D:\
+
+29/11/2023  02:49 pm    <DIR>          BUILTON
+05/07/2024  09:44 am    <DIR>          GLOBALHOME
+05/07/2024  09:49 am    <DIR>          MON
+24/11/2023  10:02 am    <DIR>          MON - Docs
+05/07/2024  09:55 am    <DIR>          MON 2017
+05/07/2024  10:00 am    <DIR>          Project
+03/06/2024  05:35 pm    <DIR>          PSAutoRecover
+03/06/2024  05:01 pm    <DIR>          PSAutoRecover.BackupByPhotoshopPortable
+01/03/2022  09:12 am    <DIR>          System Files
+09/10/2023  05:37 pm    <DIR>          ThunderBird
+17/04/2024  11:00 am    <DIR>          UNA
+               0 File(s)              0 bytes
+              11 Dir(s)  172,748,861,440 bytes free
+
+D:\>cd Project
+
+D:\Project>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is E009-EB0F
+
+ Directory of D:\Project
+
+05/07/2024  10:00 am    <DIR>          .
+               0 File(s)              0 bytes
+               1 Dir(s)  172,748,861,440 bytes free
+
+D:\Project>MKDIR 00-Git Basic
+
+D:\Project>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is E009-EB0F
+
+ Directory of D:\Project
+
+05/07/2024  10:45 am    <DIR>          .
+05/07/2024  10:45 am    <DIR>          00-Git
+05/07/2024  10:45 am    <DIR>          Basic
+               0 File(s)              0 bytes
+               3 Dir(s)  172,748,861,440 bytes free
+
+D:\Project>cs ..
+'cs' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Project>cd..
+
+D:\>MKDIR Projects
+
+D:\>cd Projects
+
+D:\Projects>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is E009-EB0F
+
+ Directory of D:\Projects
+
+05/07/2024  10:46 am    <DIR>          .
+               0 File(s)              0 bytes
+               1 Dir(s)  172,748,861,440 bytes free
+
+D:\Projects>mkdir Git-Lecture
+
+D:\Projects>cd Git-Lecture
+
+D:\Projects\Git-Lecture>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is E009-EB0F
+
+ Directory of D:\Projects\Git-Lecture
+
+05/07/2024  10:47 am    <DIR>          .
+05/07/2024  10:47 am    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  172,748,861,440 bytes free
+
+D:\Projects\Git-Lecture>cd ..
+
+D:\Projects>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is E009-EB0F
+
+ Directory of D:\Projects
+
+05/07/2024  10:47 am    <DIR>          .
+05/07/2024  11:06 am    <DIR>          Git-Lecture
+               0 File(s)              0 bytes
+               2 Dir(s)  172,748,861,440 bytes free
+
+D:\Projects>cd Git-Lecture
+
+D:\Projects\Git-Lecture>cd..
+
+D:\Projects>git config --global --list
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=mon
+user.email=rtm199013@gmail.com
+
+D:\Projects>git
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+D:\Projects>git -v
+git version 2.45.2.windows.1
+
+D:\Projects>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Projects>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is E009-EB0F
+
+ Directory of D:\Projects
+
+05/07/2024  10:47 am    <DIR>          .
+05/07/2024  11:06 am    <DIR>          Git-Lecture
+               0 File(s)              0 bytes
+               2 Dir(s)  172,748,857,344 bytes free
+
+D:\Projects>git init
+Initialized empty Git repository in D:/Projects/.git/
+
+D:\Projects>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git-Lecture/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Projects>git log
+fatal: your current branch 'master' does not have any commits yet
+
+D:\Projects>git -log
+unknown option: -log
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+D:\Projects>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is E009-EB0F
+
+ Directory of D:\Projects
+
+05/07/2024  01:40 pm    <DIR>          .
+05/07/2024  11:06 am    <DIR>          Git-Lecture
+               0 File(s)              0 bytes
+               2 Dir(s)  172,748,804,096 bytes free
+
+D:\Projects>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Projects>git log
+fatal: your current branch 'master' does not have any commits yet
+
+D:\Projects>git log
+fatal: your current branch 'master' does not have any commits yet
+
+D:\Projects>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is E009-EB0F
+
+ Directory of D:\Projects
+
+05/07/2024  01:40 pm    <DIR>          .
+05/07/2024  11:06 am    <DIR>          Git-Lecture
+               0 File(s)              0 bytes
+               2 Dir(s)  172,748,804,096 bytes free
+
+D:\Projects>rm -rf .git
+'rm' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Projects>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is E009-EB0F
+
+ Directory of D:\Projects
+
+05/07/2024  01:40 pm    <DIR>          .
+05/07/2024  11:06 am    <DIR>          Git-Lecture
+               0 File(s)              0 bytes
+               2 Dir(s)  172,748,804,096 bytes free
+
+D:\Projects>cd Git-Lecture
+
+D:\Projects\Git-Lecture>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is E009-EB0F
+
+ Directory of D:\Projects\Git-Lecture
+
+05/07/2024  11:06 am    <DIR>          .
+05/07/2024  01:40 pm    <DIR>          ..
+05/07/2024  03:55 pm             1,498 Command.txt
+               1 File(s)          1,498 bytes
+               2 Dir(s)  172,748,804,096 bytes free
+
+D:\Projects\Git-Lecture>git init
+Initialized empty Git repository in D:/Projects/Git-Lecture/.git/
+
+D:\Projects\Git-Lecture>cd..
+
+D:\Projects>rm -rf .git
+'rm' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Projects>git rm -rf .git
+fatal: pathspec '.git' did not match any files
+
+D:\Projects>cd Git-Lecture
+
+D:\Projects\Git-Lecture>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is E009-EB0F
+
+ Directory of D:\Projects\Git-Lecture
+
+05/07/2024  03:57 pm    <DIR>          .
+05/07/2024  03:58 pm    <DIR>          ..
+05/07/2024  03:55 pm             1,498 Command.txt
+               1 File(s)          1,498 bytes
+               2 Dir(s)  172,748,808,192 bytes free
+
+D:\Projects\Git-Lecture>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Command.txt
+        Test 1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Projects\Git-Lecture>git add .
+
+D:\Projects\Git-Lecture>git commit -m "Initial Commit. + 1st Test"
+[master (root-commit) 9044a14] Initial Commit. + 1st Test
+ 2 files changed, 86 insertions(+)
+ create mode 100644 Command.txt
+ create mode 100644 Test 1.txt
+
+D:\Projects\Git-Lecture>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\Projects\Git-Lecture>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Test 2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Projects\Git-Lecture>git add .
+
+D:\Projects\Git-Lecture>git commit -m "2nd Test"
+[master e8b39e5] 2nd Test
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Test 2.txt
+
+D:\Projects\Git-Lecture>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\Projects\Git-Lecture>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test 2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Projects\Git-Lecture>git add .
+
+D:\Projects\Git-Lecture>git commit -m "3rd Commit From: Test 2"
+[master e7890ef] 3rd Commit From: Test 2
+ 1 file changed, 1 insertion(+)
+
+D:\Projects\Git-Lecture>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\Projects\Git-Lecture>git log
+commit e7890ef06a124b77280f5b73625eeacb2b318534 (HEAD -> master)
+Author: mon <rtm199013@gmail.com>
+Date:   Fri Jul 5 16:02:14 2024 +0800
+
+    3rd Commit From: Test 2
+
+commit e8b39e54c15175bf39cf545cd411603df9866ca5
+Author: mon <rtm199013@gmail.com>
+Date:   Fri Jul 5 16:00:52 2024 +0800
+
+    2nd Test
+
+commit 9044a147860a56b056a6e3e9cfd6e114f0faa118
+Author: mon <rtm199013@gmail.com>
+Date:   Fri Jul 5 15:59:59 2024 +0800
+
+    Initial Commit. + 1st Test
+
+D:\Projects\Git-Lecture>git checkout 9044a147860a56b056a6e3e9cfd6e114f0faa118
+Note: switching to '9044a147860a56b056a6e3e9cfd6e114f0faa118'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 9044a14 Initial Commit. + 1st Test
+
+D:\Projects\Git-Lecture>git status
+HEAD detached at 9044a14
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test 1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Projects\Git-Lecture>git commit -m "4th Commit From: 1st Test"
+HEAD detached at 9044a14
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test 1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Projects\Git-Lecture>git status
+HEAD detached at 9044a14
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test 1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Projects\Git-Lecture>git add .
+
+D:\Projects\Git-Lecture>git commit -m "4th Commit From: 1st Test"
+[detached HEAD 5c1d970] 4th Commit From: 1st Test
+ 1 file changed, 1 insertion(+)
+
+D:\Projects\Git-Lecture>git status
+HEAD detached from 9044a14
+nothing to commit, working tree clean
+
+D:\Projects\Git-Lecture>git log
+commit 5c1d97018486e592c4d9d92cf9abaa395142f236 (HEAD)
+Author: mon <rtm199013@gmail.com>
+Date:   Fri Jul 5 16:05:04 2024 +0800
+
+    4th Commit From: 1st Test
+
+commit 9044a147860a56b056a6e3e9cfd6e114f0faa118
+Author: mon <rtm199013@gmail.com>
+Date:   Fri Jul 5 15:59:59 2024 +0800
+
+    Initial Commit. + 1st Test
+
+D:\Projects\Git-Lecture>git log --
+commit 5c1d97018486e592c4d9d92cf9abaa395142f236 (HEAD)
+Author: mon <rtm199013@gmail.com>
+Date:   Fri Jul 5 16:05:04 2024 +0800
+
+    4th Commit From: 1st Test
+
+commit 9044a147860a56b056a6e3e9cfd6e114f0faa118
+Author: mon <rtm199013@gmail.com>
+Date:   Fri Jul 5 15:59:59 2024 +0800
+
+    Initial Commit. + 1st Test
+
+D:\Projects\Git-Lecture>git log --all --graph
+* commit 5c1d97018486e592c4d9d92cf9abaa395142f236 (HEAD)
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:05:04 2024 +0800
+|
+|     4th Commit From: 1st Test
+|
+| * commit e7890ef06a124b77280f5b73625eeacb2b318534 (master)
+| | Author: mon <rtm199013@gmail.com>
+| | Date:   Fri Jul 5 16:02:14 2024 +0800
+| |
+| |     3rd Commit From: Test 2
+| |
+| * commit e8b39e54c15175bf39cf545cd411603df9866ca5
+|/  Author: mon <rtm199013@gmail.com>
+|   Date:   Fri Jul 5 16:00:52 2024 +0800
+|
+|       2nd Test
+|
+* commit 9044a147860a56b056a6e3e9cfd6e114f0faa118
+  Author: mon <rtm199013@gmail.com>
+  Date:   Fri Jul 5 15:59:59 2024 +0800
+
+      Initial Commit. + 1st Test
+
+D:\Projects\Git-Lecture>git branch
+* (HEAD detached from 9044a14)
+  master
+
+D:\Projects\Git-Lecture>git master
+git: 'master' is not a git command. See 'git --help'.
+
+The most similar command is
+        restore
+
+D:\Projects\Git-Lecture>git branch master
+fatal: a branch named 'master' already exists
+
+D:\Projects\Git-Lecture>git branch -a
+* (HEAD detached from 9044a14)
+  master
+
+D:\Projects\Git-Lecture>git branch 5c1d97018486e592c4d9d92cf9abaa395142f236
+
+D:\Projects\Git-Lecture>git branch -a
+* (HEAD detached from 9044a14)
+  5c1d97018486e592c4d9d92cf9abaa395142f236
+  master
+
+D:\Projects\Git-Lecture>git log --all --graph
+* commit 5c1d97018486e592c4d9d92cf9abaa395142f236 (HEAD, 5c1d97018486e592c4d9d92cf9abaa395142f236)
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:05:04 2024 +0800
+|
+|     4th Commit From: 1st Test
+|
+| * commit e7890ef06a124b77280f5b73625eeacb2b318534 (master)
+| | Author: mon <rtm199013@gmail.com>
+| | Date:   Fri Jul 5 16:02:14 2024 +0800
+| |
+| |     3rd Commit From: Test 2
+| |
+| * commit e8b39e54c15175bf39cf545cd411603df9866ca5
+|/  Author: mon <rtm199013@gmail.com>
+|   Date:   Fri Jul 5 16:00:52 2024 +0800
+|
+|       2nd Test
+|
+* commit 9044a147860a56b056a6e3e9cfd6e114f0faa118
+  Author: mon <rtm199013@gmail.com>
+  Date:   Fri Jul 5 15:59:59 2024 +0800
+
+      Initial Commit. + 1st Test
+
+D:\Projects\Git-Lecture>git branch master
+fatal: a branch named 'master' already exists
+
+D:\Projects\Git-Lecture>git checkout master
+Previous HEAD position was 5c1d970 4th Commit From: 1st Test
+Switched to branch 'master'
+
+D:\Projects\Git-Lecture>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\Projects\Git-Lecture>git branch
+  5c1d97018486e592c4d9d92cf9abaa395142f236
+* master
+
+D:\Projects\Git-Lecture>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test 1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Projects\Git-Lecture>git add .
+
+D:\Projects\Git-Lecture>git commit -m "Commit 05 FROM Test 1"
+[master 476278e] Commit 05 FROM Test 1
+ 1 file changed, 1 insertion(+)
+
+D:\Projects\Git-Lecture>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\Projects\Git-Lecture>git log --all --graph
+* commit 476278ebcd43345af9ccdad318beb27654f9a757 (HEAD -> master)
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:12:59 2024 +0800
+|
+|     Commit 05 FROM Test 1
+|
+* commit e7890ef06a124b77280f5b73625eeacb2b318534
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:02:14 2024 +0800
+|
+|     3rd Commit From: Test 2
+|
+* commit e8b39e54c15175bf39cf545cd411603df9866ca5
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:00:52 2024 +0800
+|
+|     2nd Test
+|
+| * commit 5c1d97018486e592c4d9d92cf9abaa395142f236 (5c1d97018486e592c4d9d92cf9abaa395142f236)
+|/  Author: mon <rtm199013@gmail.com>
+|   Date:   Fri Jul 5 16:05:04 2024 +0800
+|
+|       4th Commit From: 1st Test
+|
+* commit 9044a147860a56b056a6e3e9cfd6e114f0faa118
+  Author: mon <rtm199013@gmail.com>
+  Date:   Fri Jul 5 15:59:59 2024 +0800
+
+      Initial Commit. + 1st Test
+
+D:\Projects\Git-Lecture>git branch -a
+  5c1d97018486e592c4d9d92cf9abaa395142f236
+* master
+
+D:\Projects\Git-Lecture>git branch checkout 5c1d97018486e592c4d9d92cf9abaa395142f236
+warning: refname '5c1d97018486e592c4d9d92cf9abaa395142f236' is ambiguous.
+Git normally never creates a ref that ends with 40 hex characters
+because it will be ignored when you just specify 40-hex. These refs
+may be created by mistake. For example,
+
+  git switch -c $br $(git rev-parse ...)
+
+where "$br" is somehow empty and a 40-hex ref is created. Please
+examine these refs and maybe delete them. Turn this message off by
+running "git config advice.objectNameWarning false"
+
+D:\Projects\Git-Lecture>git branch
+  5c1d97018486e592c4d9d92cf9abaa395142f236
+  checkout
+* master
+
+D:\Projects\Git-Lecture>git checkout
+
+D:\Projects\Git-Lecture>git branch
+  5c1d97018486e592c4d9d92cf9abaa395142f236
+  checkout
+* master
+
+D:\Projects\Git-Lecture>git checkout e7890ef06a124b77280f5b73625eeacb2b318534
+Note: switching to 'e7890ef06a124b77280f5b73625eeacb2b318534'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at e7890ef 3rd Commit From: Test 2
+
+D:\Projects\Git-Lecture>git log --all --graph
+* commit 476278ebcd43345af9ccdad318beb27654f9a757 (master)
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:12:59 2024 +0800
+|
+|     Commit 05 FROM Test 1
+|
+* commit e7890ef06a124b77280f5b73625eeacb2b318534 (HEAD)
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:02:14 2024 +0800
+|
+|     3rd Commit From: Test 2
+|
+* commit e8b39e54c15175bf39cf545cd411603df9866ca5
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:00:52 2024 +0800
+|
+|     2nd Test
+|
+| * commit 5c1d97018486e592c4d9d92cf9abaa395142f236 (checkout, 5c1d97018486e592c4d9d92cf9abaa395142f236)
+|/  Author: mon <rtm199013@gmail.com>
+|   Date:   Fri Jul 5 16:05:04 2024 +0800
+|
+|       4th Commit From: 1st Test
+|
+* commit 9044a147860a56b056a6e3e9cfd6e114f0faa118
+  Author: mon <rtm199013@gmail.com>
+  Date:   Fri Jul 5 15:59:59 2024 +0800
+
+      Initial Commit. + 1st Test
+
+D:\Projects\Git-Lecture>git checkout e8b39e54c15175bf39cf545cd411603df9866ca5
+Previous HEAD position was e7890ef 3rd Commit From: Test 2
+HEAD is now at e8b39e5 2nd Test
+
+D:\Projects\Git-Lecture>git log --all --graph
+* commit 476278ebcd43345af9ccdad318beb27654f9a757 (master)
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:12:59 2024 +0800
+|
+|     Commit 05 FROM Test 1
+|
+* commit e7890ef06a124b77280f5b73625eeacb2b318534
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:02:14 2024 +0800
+|
+|     3rd Commit From: Test 2
+|
+* commit e8b39e54c15175bf39cf545cd411603df9866ca5 (HEAD)
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:00:52 2024 +0800
+|
+|     2nd Test
+|
+| * commit 5c1d97018486e592c4d9d92cf9abaa395142f236 (checkout, 5c1d97018486e592c4d9d92cf9abaa395142f236)
+|/  Author: mon <rtm199013@gmail.com>
+|   Date:   Fri Jul 5 16:05:04 2024 +0800
+|
+|       4th Commit From: 1st Test
+|
+* commit 9044a147860a56b056a6e3e9cfd6e114f0faa118
+  Author: mon <rtm199013@gmail.com>
+  Date:   Fri Jul 5 15:59:59 2024 +0800
+
+      Initial Commit. + 1st Test
+
+D:\Projects\Git-Lecture>git checkout 9044a147860a56b056a6e3e9cfd6e114f0faa118
+Previous HEAD position was e8b39e5 2nd Test
+HEAD is now at 9044a14 Initial Commit. + 1st Test
+
+D:\Projects\Git-Lecture>git log --all --graph
+* commit 476278ebcd43345af9ccdad318beb27654f9a757 (master)
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:12:59 2024 +0800
+|
+|     Commit 05 FROM Test 1
+|
+* commit e7890ef06a124b77280f5b73625eeacb2b318534
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:02:14 2024 +0800
+|
+|     3rd Commit From: Test 2
+|
+* commit e8b39e54c15175bf39cf545cd411603df9866ca5
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:00:52 2024 +0800
+|
+|     2nd Test
+|
+| * commit 5c1d97018486e592c4d9d92cf9abaa395142f236 (checkout, 5c1d97018486e592c4d9d92cf9abaa395142f236)
+|/  Author: mon <rtm199013@gmail.com>
+|   Date:   Fri Jul 5 16:05:04 2024 +0800
+|
+|       4th Commit From: 1st Test
+|
+* commit 9044a147860a56b056a6e3e9cfd6e114f0faa118 (HEAD)
+  Author: mon <rtm199013@gmail.com>
+  Date:   Fri Jul 5 15:59:59 2024 +0800
+
+      Initial Commit. + 1st Test
+
+D:\Projects\Git-Lecture>git checkout e8b39e54c15175bf39cf545cd411603df9866ca5
+Previous HEAD position was 9044a14 Initial Commit. + 1st Test
+HEAD is now at e8b39e5 2nd Test
+
+D:\Projects\Git-Lecture>git checkout e7890ef06a124b77280f5b73625eeacb2b318534
+Previous HEAD position was e8b39e5 2nd Test
+HEAD is now at e7890ef 3rd Commit From: Test 2
+
+D:\Projects\Git-Lecture>git checkout e8b39e54c15175bf39cf545cd411603df9866ca5
+Previous HEAD position was e7890ef 3rd Commit From: Test 2
+HEAD is now at e8b39e5 2nd Test
+
+D:\Projects\Git-Lecture>git checkout e7890ef06a124b77280f5b73625eeacb2b318534
+Previous HEAD position was e8b39e5 2nd Test
+HEAD is now at e7890ef 3rd Commit From: Test 2
+
+D:\Projects\Git-Lecture>git checkout checkout
+Previous HEAD position was e7890ef 3rd Commit From: Test 2
+Switched to branch 'checkout'
+
+D:\Projects\Git-Lecture>git log --all --graph
+* commit 476278ebcd43345af9ccdad318beb27654f9a757 (master)
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:12:59 2024 +0800
+|
+|     Commit 05 FROM Test 1
+|
+* commit e7890ef06a124b77280f5b73625eeacb2b318534
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:02:14 2024 +0800
+|
+|     3rd Commit From: Test 2
+|
+* commit e8b39e54c15175bf39cf545cd411603df9866ca5
+| Author: mon <rtm199013@gmail.com>
+| Date:   Fri Jul 5 16:00:52 2024 +0800
+|
+|     2nd Test
+|
+| * commit 5c1d97018486e592c4d9d92cf9abaa395142f236 (HEAD -> checkout, 5c1d97018486e592c4d9d92cf9abaa395142f236)
+|/  Author: mon <rtm199013@gmail.com>
+|   Date:   Fri Jul 5 16:05:04 2024 +0800
+|
+|       4th Commit From: 1st Test
+|
+* commit 9044a147860a56b056a6e3e9cfd6e114f0faa118
+  Author: mon <rtm199013@gmail.com>
+  Date:   Fri Jul 5 15:59:59 2024 +0800
+
+      Initial Commit. + 1st Test
+
+D:\Projects\Git-Lecture>git checkout 476278ebcd43345af9ccdad318beb27654f9a757
+Note: switching to '476278ebcd43345af9ccdad318beb27654f9a757'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 476278e Commit 05 FROM Test 1
+
+D:\Projects\Git-Lecture>
