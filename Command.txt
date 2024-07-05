@@ -1,0 +1,86 @@
+git
+git
+git
+
+
+mkdir directoryNameHere = New Directory
+
+cd .. = back directory
+
+cd dirName = open directory
+
+touch file.txt = create txt file
+
+git config --global --list
+	user.name=mon
+	user.email=rtm199013@gmail.com
+
+git --version
+
+git init
+
+git status
+
+git add filename.type
+git add . = add all(.)
+
+	git reset filename.type = Staging area back to Working area
+	git reset . 
+
+	git checkout -- filename.type = Working area, Reset and back to original file
+
+git commit -m 'description of your save' = save the add as commit
+git commit -m 'comment' --amend = amend or edit the last commit w/ this commit
+
+	git checkout -- commitHASH = back to previews commited file
+
+	git log = show all commit logs prior to this commit
+	git log -- all = show all commit from previews up to most recent commit
+
+	git log --all --graph = visual  line of commit and branch
+
+git branch
+
+git checkout -b newBranch
+
+git branch
+
+git checkout commitCodeID = back to old commit save point
+
+
+
+	git config --global alias.s "status" = git set "s" as  status or shortcut
+	git s
+	
+	git config --global alias.cm "commit -m"
+	git cm
+
+
+.gitignore
+.gitignore
+.gitignore
+	
+	filename
+
+remove
+remove
+remove
+	
+	rm -rf	.git
+
+
+GitHub Online Repository
+GitHub Online Repository
+GitHub Online Repository
+
+
+
+git remote add origin https://github.com/rtm199013/testing.git
+
+git push -u origin master
+
+git branch
+
+git push origin newBranch
+
+git pull origin master
